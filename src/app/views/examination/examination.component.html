@@ -1,0 +1,54 @@
+<div class="animated fadeIn">
+  <div class="card">
+    <div class="card-header" style="font-weight: bold;font-size: 16px;">
+      Security Exam
+    </div>
+
+    <ng-container *ngIf="!examStarted">
+      <div class="card-body">
+        The security exam has 20 multiple-choice questions. Only 1 answer is right for each question. Click the button below to start. You can take the exam several times. You need at least an 80% to pass the exam. The admin will only see your highest score.
+      </div>
+      <div class="card-footer">
+        <!--<span>End of Exam </span>-->
+        <button type="button" class="btn btn-primary" (click)="startExam()">Start Exam</button>
+      </div>
+
+    </ng-container>
+
+    <ng-container *ngIf=" examStarted">
+      <div class="card-body">
+        <div *ngFor="let question of questions; let i = index">
+          <p style="font-size: 14px;"> {{question.questionID}} - {{question.questionText}}</p>
+          <label class="answer-container">
+            {{question.answerA}}
+            <input type="radio"  name="question{{question.questionID}}" (click)="userSelectedAnswer(question, question.answerA)">
+            <span class="checkmark"></span>
+          </label>
+          <label class="answer-container">
+            {{question.answerB}}
+            <input type="radio" name="question{{question.questionID}}" (click)="userSelectedAnswer(question, question.answerB)">
+            <span class="checkmark"></span>
+          </label>
+          <label class="answer-container">
+            {{question.answerC}}
+            <input type="radio" name="question{{question.questionID}}" (click)="userSelectedAnswer(question, question.answerC)">
+            <span class="checkmark"></span>
+          </label>
+          <label class="answer-container">
+            {{question.answerD}}
+            <input type="radio" name="question{{question.questionID}}" (click)="userSelectedAnswer(question, question.answerD)">
+            <span class="checkmark"></span>
+          </label>
+          <br>
+        </div>
+
+      </div>
+      <div class="card-footer">
+        <!--<span>End of Exam </span>-->
+        <button type="button" class="btn btn-primary" (click)="submitAnswers()">Submit Answers</button>
+        <span *ngIf="oneQuestionKeptEmpty" style="color:red; margin-left: 10px"> Please answer all questions</span>
+      </div>
+    </ng-container>
+
+  </div>
+</div>

@@ -1,0 +1,316 @@
+<div class="animated fadeIn">
+  <div class="card">
+    <div class="card-header">
+      <span class="custom-card-title" (click)="isCollapsed6 = !isCollapsed6"> <i class="fa" [ngClass]="{'fa-caret-right': isCollapsed6, 'fa-caret-down': !isCollapsed6}"></i>  General Security Policies</span>
+    </div>
+    <div
+            (collapsed)="collapsed($event)"
+            (expanded)="expanded($event)"
+            [collapse]="isCollapsed6">
+      <div class="card-body">
+        <p><strong>Stay safe on public Wi-Fi</strong><br>
+            <li>Always check the Wi-Fi you’re connecting to is from a legitimate source.
+            Hackers can set up fake ‘evil twin’ hotspots in public areas e.g. your local coffee shop, which look legitimate. However, once you’re logged on they can steal your passwords, data and infect your device with viruses or malicious software.</li>
+
+            <li> When working on sensitive data in public do not use public Wi-Fi. If your using public Wi-fi connected to the VPN</li>
+
+            <li> There is nothing for free, public Wi-Fi are sometimes used to track how many time you vist a certain place, used for advertising, collect data from your devices without knowing, and many more. Keep the use of public Wi-Fi minimal </li>
+        </p>
+        
+        <p><strong> Accounts and Passwords </strong><br>
+          <li>Keep you username and password safe. Don't write them down and leave them laying around  </li>
+          <li>Do not share your password (credentials) with anyone (even IT staff) </li>
+          <li>Do not allow anyone to use your account on your behalf  </li>
+          <li>Use different passwords for different accounts( don't use same password for muliple accounts)</li>
+          <li>Use characters, numbers, punctuation marks, and symbols in your passwords to strength them </li>
+          <li>Do not use facts about yourself in passwords ( date of birth, name, father's & mother's name ....etc) </li>
+          <li>Do not enable Save Password option when prompted to do so </li>
+        <br><br><br>
+        <img src="assets/img/infosec-toothbrush.jpg" alt="Password sharing" width="500" height="600">
+
+        </p>
+
+
+        <p><strong>Softwares and Application</strong>
+          <li>Before downloading or install an application on your device verify the source and organization</li>
+          <li>Malicious softwares may contain codes that run without you knowing. These softwares called (Malwares) collect information and may control your device </li>
+          <li>Do not download pirated softwares, or install cracks to softwares to bypass registration and paying fees. ( Remember nothing is free. If You're Not Paying For It, You Become The Product ) </li>
+          <li>Always update your Softwares and application to make sure bugs are fixed and vulnerabilities are patched</li>
+          <li>Respect the legal protections to data and software provided by copyright and licences</li>
+        </p>  
+
+
+
+
+
+      </div>
+      <div class="card-footer">
+        <span class="footer-text">End of General Security Policies</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="animated fadeIn">
+  <div class="card">
+    <div class="card-header">
+      <span class="custom-card-title" (click)="isCollapsed2 = !isCollapsed2"><i class="fa" [ngClass]="{'fa-caret-right': isCollapsed2, 'fa-caret-down': !isCollapsed2}"></i>  E-mail Security</span>
+    </div>
+    <div
+            (collapsed)="collapsed($event)"
+            (expanded)="expanded($event)"
+            [collapse]="isCollapsed2">
+      <div class="card-body">
+        <ul>
+        <li> <strong>Phishing Emails </strong>  are designed to  illude you that your accont is compromised or is going to be locked incase you don't reply to the email , or fill a form in an attached link. the attacker tries to make you download an infected  </li> 
+        <br><br>
+        <strong> Identifying phishing emails by looking for:</strong>
+        <ul>
+          
+          
+          <li>Unfamiliar sender identity e.g. mail administrator or spoof identity (sender’s identity cannot be verified, i.e. not signed).</li>
+          <li>A request for your password.</li>
+          <li>A threat that your account will be deleted if you do not respond to lure you into providing your account / password.</li>
+          <li>A return or reply-to email address that is a spoof. View the “full header” to see the actual return address.</li>
+
+          <li>Spelling errors and bad grammar.</li>
+          <li>Odd formatting (e.g., incorrect use of capital letters or punctuation).</li>
+          <li>No real name included in the greeting or signature.</li>
+          <li>No mention of a phone number or person to contact.</li>
+          <li>Includes attachments and asks you to download them.</li>
+          <li>Includes a hyperlink with an odd URL (e.g. a foreign country as the domain) or tries to match a legitimate web address but is spelled differently (e.g. microsoft.com vs micosoft.com). </li>
+        </ul>
+        <br>
+
+        <br><br><br>
+        <img src="assets/img/phishing_email1.png" alt="Phishing Email Example ">
+        <br><br>
+        <em>As can be seen from the email above the email is from an unfamiliar email, tries to trick the user that his/her account will be inactive or ulterd, and the signature of the sender isn't clear no name or contact information </em>
+        <br>
+        <br>
+        
+
+        <li> <strong>Attachment:</strong>  Threats often send attachments that are infected.  We need to make end users aware of these attacks, that attackers send emails that build trust with the victim, then fool them into clicking on the attachment.  The behavior we need to change is to get people to think before opening attachments.  Was the attachment expected?  If not sure, contact the sender or forward the email to your security team.</li>
+
+        <li><strong>Links:</strong>  These attacks work by fooling end users clicking on a link.  The link then sends the user to a phishing site, a drive by attacking site, or has them download and open an infected file (such as .pdf ).  The behavior we need to change is to get people to think before clicking on links.  Was the link expected?  If not sure, contact the sender or forward the email to your security team.</li>
+
+          <li><strong>Scams:</strong>  These attacks fool people out of their information or money by simply asking for it (the classic lottery attack).  The behavior we need to change is if something sounds too good to be true, it probably is.</li>
+
+          <li><strong>Spear Phishing:</strong> For many high value organizations, they can be targeted or singled out by specific attackers.  End users need to understand that attacks can be customized specific to them and their organization.</li>
+        </ul>
+
+        <p><strong>E-mail Tips:</strong></p>
+        <ul>
+          <li>Don't give out confidential information in response to any email. Messages that try to persuade you to send your password or credit card number are forged, even if they appear to be from your bank or system administrator.</li>
+          <li>Be wary of any email attachment that you weren’t expecting (this also applies to Web downloads). It’s very easy for a computer virus to be present in an email that appears to be from a friend. It is strongly suggested that antivirus software be used to scan anything that you receive in your email.</li>
+        </ul>
+
+      <br>
+      <iframe width="427" height="240" src="https://www.youtube.com/embed/m5mm0eaxSpg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      
+      </div>
+      <div class="card-footer">
+        <span class="footer-text">End of E-mail Security Section</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="animated fadeIn">
+  <div class="card">
+    <div class="card-header">
+      <span class="custom-card-title" (click)="isCollapsed3 = !isCollapsed3"> <i class="fa" [ngClass]="{'fa-caret-right': isCollapsed3, 'fa-caret-down': !isCollapsed3}"></i>  Social Media Security</span>
+    </div>
+    <div
+            (collapsed)="collapsed($event)"
+            (expanded)="expanded($event)"
+            [collapse]="isCollapsed3">
+      <div class="card-body">
+        <p><strong>Think before you share</strong></p>
+
+  
+          <!-- <iframe style="width: 427px; height: 240px;" src="https://www.youtube.com/embed/BcdZm3WAF4A?rel=0&amp;showinfo=0" allowfullscreen="" frameborder="0"></iframe> -->
+        
+          <iframe width="427" height="240" src="https://www.youtube.com/embed/BcdZm3WAF4A" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+        
+
+        <br><br>
+        <strong> Major risks in social media you should take care off </strong><br>
+        <ul>
+        	<li> Attackers use information you post and share to conduct their attacks. Ex. thieves may monitor your checkin habits to identfy when is the best time to break into you house</li>
+        	<li> Your friends' posts on your behalf (tag). Some pictures may not be appropriate for your career or in your community ex. partying and getting drunk </li>
+        	<li> Third party apps and games you use on social media. These apps can have access to your profiles and see lots of your data.</li>
+        	<li> Scammers</li>
+        </ul>   
+        <strong>Tips when using social media apps</strong><br>
+        <ul>
+          <li>Know what you are sharing on social media. Ask yourself before posting anything if there is someone you don't want to see it. anything you post on social media is accessable by some way or another </li>
+          <li> Review what your friends post on your behalf. </li>
+          <li>Don't link different social media platforms together this will give you more control on each one alone </li> 	
+          <li>Use a strong password.  The longer it is, the more secure it will be.</li>
+          <li>Use a different password for each of your social media accounts.</li>
+          <li>Set up your security answers.  This two factor authentication is available for most social media sites.</li>
+          <li>If you have social media apps on your phone, be sure to password protect your device.</li>
+          <li>Be selective with friend requests. If you don’t know the person, don’t accept their request.  It could be a fake account.</li>
+          <li>Click links with caution.  Social media accounts are regularly hacked.  Look out for language or content that does not sound like something your friend would post.</li>
+          <li>Be careful about what you share. Don’t reveal sensitive personal information ie: home address, financial information, phone number.  The more you post the easier it is to have your identity stolen.</li>
+          <li>Create separate accounts only for apps and games on social media platforms.
+          <li>Become familiar with the privacy policies of the social media channels you use and customize your privacy settings to control who sees what. Review it from time to time </li>
+          <li>Protect your computer by installing antivirus software to safeguard.  Also ensure that your browser, operating system, and software are kept up to date.</li>
+          <li>Remember to log off when you’re done.</li>
+          <li>Check Your location settings, dont share your location on social media</li>
+
+
+        </ul>
+      </div>
+      <div class="card-footer">
+        <span class="footer-text">End of Social Media Security Section</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="animated fadeIn">
+  <div class="card">
+    <div class="card-header">
+      <span class="custom-card-title" (click)="isCollapsed4 = !isCollapsed4"> <i class="fa" [ngClass]="{'fa-caret-right': isCollapsed4, 'fa-caret-down': !isCollapsed4}"></i>  Physical Security</span>
+    </div>
+    <div
+            (collapsed)="collapsed($event)"
+            (expanded)="expanded($event)"
+            [collapse]="isCollapsed4">
+      <div class="card-body">
+        <ul>
+          <li>Keep clean disk (don’t write usernames & password on papers on the desk). Don't leave important documents clear and open to pass byers</li>
+          <li>Lock your computer when leaving your desk. Remember if someone have access to your computer he/she could do anything</li>
+          <li>Never plugin a USB that you don't know its source or what it contains into your machine</li>
+          <li>Check for USB keyloggers frequently</li>
+          <li>Always scan USBs for viruses</li>
+          <li>Follow proper procedure when disposing paper documents. Shred them instead of throwing them in the trash  </li>
+
+          <img src="assets/img/lock_screen.png" alt="lock computer">
+        
+        </ul>
+
+      </div>
+      <div class="card-footer">
+        <span class="footer-text">End of Physical Security Section</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="animated fadeIn">
+  <div class="card">
+    <div class="card-header">
+      <span class="custom-card-title" (click)="isCollapsed1 = !isCollapsed1"><i class="fa" [ngClass]="{'fa-caret-right': isCollapsed1, 'fa-caret-down': !isCollapsed1}"></i>  Organization Security</span>
+    </div>
+    <div
+            (collapsed)="collapsed($event)"
+            (expanded)="expanded($event)"
+            [collapse]="isCollapsed1">
+      <div class="card-body">
+       
+       <i>This section depends on the organization's policy. Each organization has it own specific internal oganization security policies. Below are examples of general policies that could apply on many organizations </i>
+            <p><strong> In The Office </strong><br>
+            <ul>
+              <li>Keep a clean Desk </li>
+              <li>All unatteneded computers must be locked</li>
+              <li>Don't share information about a project with your collegues if they are not on the same project </li>
+              <li>When printing documents don't leave them on the printer collect them immediately</li>
+              <li>BYOD ( bring your own devices) must be preapproved by the IT department</li> 
+            </ul>
+            
+
+
+            
+          <p> <strong>Posting on Social Media</strong><br>
+            <ul>
+              <li>Posting anything on social media about the organization is not tolerated</li>
+              <li>Marketing team are only allowed to post on social media according to the marketing plan and only on the official organizational  account </li>
+            </ul>
+
+            It is also important to consider what you're inadvertently 'giving away' with your social media posts - could a post about a customer be seen as a breach of confidentiality or provide information to a competitor?<br>
+          
+
+          <p><strong>Password security</strong><br>
+            <ul>
+              <li>Be sure to use different passwords for different accounts</li>
+              <li>Passwords should be changed every 3 months</li>
+              <li>Do not enter passwords when others can observe what you are typing</li>
+              <li> Strong passwords need to be as long as possible and contain upper and lower case letters, numbers, and symbols. Password managers are available online, but be sure to check they are reputable and secure.</li>
+              <b><i>Always remember if someone has your password he can commit criminal acts using your account</i></b>
+            </ul>
+
+              
+          
+          <p> <strong>“Why would they hack me?” </strong><br>
+            Remember, you are a target, regardless of who you work for. Don't assume your job or place of work is not important or relevant enough for Cyber criminals to be interested in you. Everyone who has a computer account either for business, personal or both is a potential target. 
+          
+            
+          <p><strong>Security when working from home</strong><br>
+            To make sure your home network is kept secure, take steps to: 
+          <ul>
+            <li>Use VPN to connect to your organization's network</li>
+            <li>Use a strong encryption key</li>
+            <li>Never leave the network 'open'</li>
+            <li>Do not share keys or passwords with neighbours  </li>
+            <li>Change any default supplied passwords</li>
+            <li>Lock it down</li>
+            <li>Change your home's Wi-Fi password frequently</li>    
+          </ul>
+          
+
+           
+        
+
+          <p> <strong>Up keeping updates</strong><br>
+            Regular security updates to your computer operating system are vital to ensure the latest bug fixes have been issued to update and fix any potential vulnerabilities. Do not run unsupported or out of date versions of an operating systems or applications, as these will not receive these updates. 
+          
+          <p><strong>Mobile security</strong><br>
+            If you want to access work emails and information on your mobile phone, ensure your device has a pin, pattern or password set up. Try to use 3G or 4G internet access where possible to avoid insecure Wi-Fi networks.
+          </p>
+
+            <p><strong>What are you plugging in?</strong><br>
+            Before plugging a USB memory stick or other removable media into your device, think about where it has come from. Only use encrypted media and ensure it has come from a trusted source, as viruses and malware can easily be spread this way.
+          
+
+         
+          
+      </div>
+      <div class="card-footer">
+        <span class="footer-text">End of Organization Security Section</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="animated fadeIn">
+  <div class="card">
+    <div class="card-header">
+      <span class="custom-card-title" (click)="isCollapsed5 = !isCollapsed5"> <i class="fa" [ngClass]="{'fa-caret-right': isCollapsed5, 'fa-caret-down': !isCollapsed5}"></i>  References</span>
+    </div>
+    <div
+            (collapsed)="collapsed($event)"
+            (expanded)="expanded($event)"
+            [collapse]="isCollapsed5">
+      <div class="card-body">
+        <ul>
+          <li>NIST SP 800-50 : Building an Information Technology Security Awareness and Training Program</li>
+          <li>http://resources.infosecinstitute.com/category/enterprise/securityawareness/the-ins-and-outs-of-email-security-awareness/#gref</li>
+          <li>https://carleton.ca/its/2016/social-media-safety/</li>
+          <li>https://blog.cosector.com/top-10-cyber-security-tips-for-staff-and-organisations</li>
+
+        </ul>
+      </div>
+      <div class="card-footer">
+        <span class="footer-text">End of References Section</span>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,53 @@
+<div class="animated fadeIn">
+  <div class="card">
+    <div class="card-header" style="font-weight: bold;font-size: 16px;">
+      Update Exam Questions & Answers
+    </div>
+
+      <div class="card-body">
+        <span *ngIf="!questionsLoaded">Loading...</span>
+
+        <div *ngFor="let question of questions; let i = index">
+          <p style="font-size: 14px;"> {{question.questionID}} -
+            <!--{{question.questionText}}-->
+          <input type="text" class="form-control" value="{{question.questionText}}" [(ngModel)]="question.questionText">
+          </p>
+          <label class="answer-container">
+
+            <!--{{question.answerA}}-->
+            <input type="radio"  name="question{{question.questionID}}" (click)="userSelectedAnswer(question, question.answerA)" [checked]="question.answerA == question.correctAnswer"  >
+            <span class="checkmark"></span>
+          </label>
+          <input type="text"  class="form-control" style="margin-left: 25px; height: 70%; width: 95%; padding-top: 1px; padding-bottom: 1px; margin-bottom: 8px;"  value="{{question.answerA}}" [(ngModel)]="question.answerA">
+          <label class="answer-container">
+            <!--{{question.answerB}}-->
+            <input type="radio" name="question{{question.questionID}}" (click)="userSelectedAnswer(question, question.answerB)" [checked]="question.answerB == question.correctAnswer">
+            <span class="checkmark"></span>
+          </label>
+          <input type="text"  class="form-control" style="margin-left: 25px; height: 70%; width: 95%; padding-top: 1px; padding-bottom: 1px; margin-bottom: 8px;"  value="{{question.answerB}}" [(ngModel)]="question.answerB">
+
+          <label class="answer-container">
+            <!--{{question.answerC}}-->
+            <input type="radio" name="question{{question.questionID}}" (click)="userSelectedAnswer(question, question.answerC)" [checked]="question.answerC == question.correctAnswer">
+            <span class="checkmark"></span>
+          </label>
+          <input type="text"  class="form-control" style="margin-left: 25px; height: 70%; width: 95%; padding-top: 1px; padding-bottom: 1px; margin-bottom: 8px;"  value="{{question.answerC}}" [(ngModel)]="question.answerC">
+          <label class="answer-container">
+            <!--{{question.answerD}}-->
+            <input type="radio" name="question{{question.questionID}}" (click)="userSelectedAnswer(question, question.answerD)" [checked]="question.answerD == question.correctAnswer">
+            <span class="checkmark"></span>
+          </label>
+          <input type="text"  class="form-control" style="margin-left: 25px; height: 70%; width: 95%; padding-top: 1px; padding-bottom: 1px; margin-bottom: 8px;"  value="{{question.answerD}}" [(ngModel)]="question.answerD">
+          <br>
+        </div>
+
+      </div>
+      <div class="card-footer">
+        <!--<span>End of Exam </span>-->
+        <button type="button" class="btn btn-primary" (click)="saveExam()">Save Exam</button>
+        <span *ngIf="oneQuestionKeptEmpty" style="color:red; margin-left: 10px"> Please set an answer to all questions</span>
+      </div>
+
+
+  </div>
+</div>

@@ -1,0 +1,45 @@
+<div class="animated fadeIn">
+  <div class="card">
+    <div class="card-header" style="font-weight: bold;font-size: 16px;">
+      All Users Results
+    </div>
+    <div class="card-body">
+
+      <div *ngIf="results.length == 0 && loadingString != 'Loading Results...'">
+        No results found.
+      </div>
+
+      <div *ngIf="results.length == 0 && loadingString == 'Loading Results...'">
+        Loading Results...
+      </div>
+      <div *ngIf="results.length > 0">
+        <table class="table table-striped">
+          <thead>
+          <tr>
+            <th>User</th>
+            <th>Number of Correct Answers</th>
+            <th>Number of Wrong Answers</th>
+            <th>Highest Score in Percentage</th>
+            <th>Status</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr *ngFor="let result of results; let i = index">
+            <td>{{result.user}}</td>
+            <td>{{result.numberCorrect}}</td>
+            <td>{{result.numberWrong}}</td>
+            <td>{{result.finalScore}} %</td>
+            <td>
+              <span *ngIf="result.status == 'Passed'" style="background: green; color: white; padding: 10px">Passed</span>
+              <span *ngIf="result.status == 'Failed'" style="background: #da1616; color: white; padding: 10px">Failed</span>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+    <div class="card-footer">
+    </div>
+  </div>
+</div>
